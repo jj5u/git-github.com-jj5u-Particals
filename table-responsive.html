@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+        <title>RESPONSIVE TABLE</title>
+        <link rel="icon" href="./images/favicon.ico" />
+        <link
+            rel="stylesheet"
+            as="style"
+            crossorigin
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/variable/pretendardvariable.css"
+        />
+        <link href="css/common.css" rel="stylesheet" type="text/css" />
+        <link href="css/table-responsive.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="airdatepicker/air-datepicker.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://unpkg.com/microtip/microtip.css" />
+    </head>
+    <body>
+        <header class="header_top">
+            <div class="lft">
+                <span class="material-icons hamburger">menu</span>
+                <div class="logo_box">
+                    <div class="logo">
+                        <span class="material-icons-outlined"> language </span>
+                    </div>
+                    <span class="title">Title</span>
+                </div>
+            </div>
+
+            <div class="rht">
+                <div class="login_info">
+                    <div class="login_info_account">
+                        <span class="product">Hello</span>
+                        |
+                        <span class="name">world</span>님
+                    </div>
+                    <a href="" class="btn btn_logout">로그아웃</a>
+                </div>
+            </div>
+        </header>
+        <nav class="nav side_bar scroll">
+            <div class="nav_wrapper">
+                <div class="side_container">
+                    <span class="indicator"></span>
+                    <div class="menu_col">
+                        <div
+                            class="menu_icon"
+                            aria-label="MENU1"
+                            data-microtip-position="right"
+                            role="tooltip"
+                        >
+                            <span class="material-icons">home</span>
+                        </div>
+                        <div class="menu_name">MENU1</div>
+                    </div>
+                </div>
+                <div class="side_container">
+                    <span class="indicator"></span>
+                    <div class="menu_col">
+                        <div
+                            class="menu_icon"
+                            aria-label="MENU2"
+                            data-microtip-position="right"
+                            role="tooltip"
+                        >
+                            <span class="material-icons">person</span>
+                        </div>
+                        <div class="menu_name">MENU2</div>
+                    </div>
+                </div>
+                <div class="side_container">
+                    <span class="indicator"></span>
+                    <div class="menu_col">
+                        <div
+                            class="menu_icon"
+                            aria-label="MENU3"
+                            data-microtip-position="right"
+                            role="tooltip"
+                        >
+                            <span class="material-icons-outlined"> settings </span>
+                        </div>
+                        <div class="menu_name">MENU3</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content_wrapper">
+            <div class="content">
+                <h2 class="page_title">Heading</h2>
+                <div class="table_wrap">
+                    <section class="1depth">
+                        <div class="white_box list_1dept">
+                            <div class="list_header list_1depth_header">
+                                <h3 class="sub_title">send links</h3>
+                            </div>
+                            <div class="send_link">
+                                <!-- 전송 성공시 success , 실패시 fail  -->
+                                <div class="text_wrap">
+                                    <input type="text" placeholder="Put your number here" />
+                                    <button class="send">
+                                        <span class="material-icons dt_icon">send</span>
+                                    </button>
+                                </div>
+                                <span class="message message--success">success</span>
+                                <span class="message message--fail">faild</span>
+                            </div>
+                        </div>
+                        <div class="white_box btn">
+                            <button class="first_action">history</button>
+                        </div>
+                    </section>
+                    <section class="2depth">
+                        <div class="white_box list_2depth">
+                            <div class="list_header list_2depth_header">
+                                <div class="list_header">
+                                    <h3 class="sub_title">history</h3>
+                                    <button class="close">close</button>
+                                </div>
+                                <div class="dt_wrap">
+                                    <p>
+                                        <input type="text" class="dt_picker dt_range" /><span
+                                            class="material-icons dt_icon"
+                                            >date_range</span
+                                        >
+                                    </p>
+                                    <button>search</button>
+                                </div>
+                            </div>
+                            <!-- 기본정보 tab  -->
+                            <div class="list_2depth_content tab1">
+                                <div class="divtable scroll">
+                                    <div class="list_depth_container scroll">
+                                        <div class="container thead grid">
+                                            <!-- 오름/내림차순 정렬이 있는 경우 has_order 클래스 span:아이콘 -->
+                                            <!-- 툴팁이 있는 경우 has_tooltip 클래스 p 아이콘 -->
+                                            <div class="th">th1</div>
+                                            <div class="th">th2</div>
+                                            <div class="th">th3</div>
+                                            <div class="th">th4</div>
+                                        </div>
+                                        <div class="tbody">
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                            <div class="container tr">
+                                                <div class="item"><span>td</span></div>
+                                                <div class="item">td2</div>
+                                                <div class="item">td3</div>
+                                                <div class="item">td4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <a href="#"> <span class="material-icons">first_page</span></a>
+                                    <a href="#">
+                                        <span class="material-icons">keyboard_arrow_left</span></a
+                                    >
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#"
+                                        ><span class="material-icons">keyboard_arrow_right</span></a
+                                    >
+                                    <a href="#"><span class="material-icons">last_page</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="popup_wrapper"></div>
+        <script src="js/menubar.js"></script>
+        <script src="js/table-responsive.js"></script>
+        <script src="airdatepicker/air-datepicker.js"></script>
+        <script>
+            new AirDatepicker(".dt_picker.place_order");
+            new AirDatepicker(".dt_picker.start_date");
+            new AirDatepicker(".dt_picker.end_date");
+        </script>
+        <script>
+            new AirDatepicker(".dt_range", {
+                autoClose: true,
+                multipleDatesSeparator: " - ",
+                range: true,
+                toggleSelected: false,
+            });
+        </script>
+    </body>
+</html>
